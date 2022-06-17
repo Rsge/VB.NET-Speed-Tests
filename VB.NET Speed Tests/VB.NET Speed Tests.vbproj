@@ -8,15 +8,17 @@
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
     <Authors>Jan G. (Rsge)</Authors>
-    <Version>0.1.0.0</Version>
+    <Version>0.1.1</Version>
     <Company>Hanns G. Werner GmbH + Co. KG</Company>
-    <Copyright>GPL-3.0</Copyright>
+    <Copyright>Copyright © Jan G. 2022</Copyright>
     <RepositoryType>git</RepositoryType>
     <PackageId>VB.NET Speed Tests</PackageId>
     <RepositoryUrl>https://github.com/Rsge/VB.NET-Speed-tests</RepositoryUrl>
     <Description>Processing speed comparisons for various different methods of often-used routines.</Description>
     <ApplicationIcon>Resources\Stopwatch.ico</ApplicationIcon>
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <PackageLicenseFile></PackageLicenseFile>
+    <PackageLicenseExpression>GPL-3.0</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>

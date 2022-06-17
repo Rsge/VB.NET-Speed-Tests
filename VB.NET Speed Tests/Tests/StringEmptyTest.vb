@@ -2,15 +2,26 @@
     Implements ITest
 
     'String constants
+    ''' <summary>
+    ''' Labels of tested action's methods in order of running them in code.
+    ''' </summary>
     Private Shared ReadOnly _methodLabels As String() = {
         "Using '= """"'",
         "Using '= vbNullString'",
         "Using '= String.Empty'",
         "Using '.Length = 0'"
     }
+    ''' <summary>
+    ''' String to test the methods with.
+    ''' </summary>
     Private Shared ReadOnly testString As String = "TestExampleTestExampleTest"
 
 
+    ''' <summary>
+    ''' Runs tests with different methods of approaching a problem, measuring the time they take.
+    ''' </summary>
+    ''' <param name="iterations">How many times each testing action should be run.</param>
+    ''' <returns><see cref="Dictionary(Of String, Double)"/> with labels for the tested methods as <see cref="String"/> as key and the times they took as <see cref="Double"/> as value.</returns>
     Public Function Test(iterations As Long) As Dictionary(Of String, Double) Implements ITest.Test
         'Basic variables
         Dim i As Long

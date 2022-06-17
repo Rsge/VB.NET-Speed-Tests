@@ -1,4 +1,4 @@
-﻿'Public Class ExampleTest
+﻿'Public Class AssignEmptyStringTest
 '    Implements ITest
 
 '    'String constants
