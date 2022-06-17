@@ -16,6 +16,7 @@
 '    ''' </summary>
 '    Private Shared ReadOnly testString As String = "TestExampleTestExampleTest"
 
+
 '    ''' <summary>
 '    ''' Runs tests with different methods of approaching a problem, measuring the time they take.
 '    ''' </summary>

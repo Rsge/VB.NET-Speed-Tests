@@ -16,7 +16,6 @@
     ''' </summary>
     Private Shared ReadOnly testString As String = "TestExampleTestExampleTest"
 
-
     ''' <summary>
     ''' Runs tests with different methods of approaching a problem, measuring the time they take.
     ''' </summary>
@@ -29,6 +28,7 @@
         Dim startTimes As New List(Of Date)
         Dim endTimes As New List(Of Date)
         Dim results As New Dictionary(Of String, Double)
+
 
         'Testing '= ""'
         startTimes.Add(Date.Now)
