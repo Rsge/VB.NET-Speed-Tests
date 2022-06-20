@@ -8,7 +8,7 @@
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
     <Authors>Jan G. (Rsge)</Authors>
-    <Version>0.2.0</Version>
+    <Version>0.3.0</Version>
     <Company>Hanns G. Werner GmbH + Co. KG</Company>
     <Copyright>Copyright © Jan G. 2022</Copyright>
     <RepositoryType>git</RepositoryType>
@@ -19,6 +19,7 @@
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
     <PackageLicenseFile></PackageLicenseFile>
     <PackageLicenseExpression>GPL-3.0</PackageLicenseExpression>
+    <Platforms>AnyCPU;x64;x86;ARM64;ARM32</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
