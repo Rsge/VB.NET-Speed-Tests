@@ -1,4 +1,6 @@
-﻿Public Class StringEmptyTest
+﻿Imports System.Text
+
+Public Class StringConcatenationLongTest
     Implements ITest
 
     'String constants
@@ -6,15 +8,18 @@
     ''' Labels of tested action's methods in order of running them in code.
     ''' </summary>
     Private Shared ReadOnly _methodLabels As String() = {
-        "Using '= """"'",
-        "Using '= vbNullString'",
-        "Using '= String.Empty'",
-        "Using '.Length = 0'"
+        "Using 'x &= x'",
+        "Using a StringBuilder"
     }
     ''' <summary>
     ''' String to test the methods with.
     ''' </summary>
-    Private Shared ReadOnly _testString As String = "TestExampleTestExampleTest"
+    Private Shared ReadOnly _testString As String = "Test"
+    ''' <summary>
+    ''' Number of repeats adding the test string to the result
+    ''' </summary>
+    Private Const _repeats As Integer = 100
+
 
     ''' <summary>
     ''' Runs tests with different methods of approaching a problem, measuring the time they take.
@@ -24,37 +29,30 @@
     Public Function Test(iterations As Long) As Dictionary(Of String, Double) Implements ITest.Test
         'Basic variables
         Dim i As Long
-        Dim testBool As Boolean
+        Dim j As Integer
+        Dim testResultString As String = String.Empty
         Dim startTimes As New List(Of Date)
         Dim endTimes As New List(Of Date)
         Dim results As New Dictionary(Of String, Double)
 
-
-        'Testing '= ""'
+        'Testing 'x &= x.'
         startTimes.Add(Date.Now)
         For i = 1 To iterations
-            testBool = _testString = ""
+            For j = 1 To _repeats
+                testResultString &= _testString
+            Next
+            testResultString = String.Empty
         Next
         endTimes.Add(Date.Now)
 
-        'Testing '= vbNullString'
+        'Testing StringBuilder
         startTimes.Add(Date.Now)
         For i = 1 To iterations
-            testBool = _testString = vbNullString
-        Next
-        endTimes.Add(Date.Now)
-
-        'Testing '= String.Empty'
-        startTimes.Add(Date.Now)
-        For i = 1 To iterations
-            testBool = _testString = String.Empty
-        Next
-        endTimes.Add(Date.Now)
-
-        'Testing '.Length = 0'
-        startTimes.Add(Date.Now)
-        For i = 1 To iterations
-            testBool = _testString.Length = 0
+            Dim testBuilder As New StringBuilder
+            For j = 1 To _repeats
+                testBuilder.Append(_testString)
+            Next
+            testResultString = testBuilder.ToString
         Next
         endTimes.Add(Date.Now)
 
