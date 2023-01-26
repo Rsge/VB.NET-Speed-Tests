@@ -20,13 +20,13 @@ Public Class MainForm
     ''' <param name="sender">Event sender.</param>
     ''' <param name="e">Triggering event.</param>
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'Finding & listing all implemented tests 
+        ' Find & list all implemented tests.
         Dim type As Type = GetType(ITest)
         Dim subs As String() = AppDomain.CurrentDomain.GetAssemblies().
             SelectMany(Function(x) x.GetTypes()).
             Where(Function(x) type.IsAssignableFrom(x) And x IsNot type).
             Select(Function(x) x.Name).ToArray
-        'Populating dropdown
+        ' Populate dropdown.
         TestsList.Items.AddRange(subs)
         TestsList.SelectedIndex = 0
     End Sub
@@ -37,15 +37,15 @@ Public Class MainForm
     ''' <param name="sender">Event sender.</param>
     ''' <param name="e">Triggering event.</param>
     Private Sub StartButton_Click(sender As Object, e As EventArgs) Handles StartButton.Click
-        'Getting selected iteration count and test type
+        ' Get selected iteration count and test type.
         Dim iterations As Long = Math.Pow(10, IterationPotencyCount.Value)
         Dim selectedType As Type = Type.GetType(String.Join(".", [GetType].Namespace, TestsList.SelectedItem))
         Dim selectedTest As ITest = Activator.CreateInstance(selectedType)
-        'Calculating results
+        ' Calculate results.
         Dim results As Dictionary(Of String, Double) = selectedTest.Test(iterations)
         Dim min As Double = results.Values.Min()
         Dim minKey As String = String.Empty
-        'Create output message
+        ' Create output message.
         Dim resultOutputBuilder As New StringBuilder
         resultOutputBuilder.AppendLine(TestsList.SelectedItem).AppendLine()
         For Each key As String In results.Keys

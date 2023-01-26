@@ -6,6 +6,7 @@
 # Custom
 /!*
 *.bat
+*.cmd
 
 # User-specific files
 *.rsuser
