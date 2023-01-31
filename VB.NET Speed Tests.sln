@@ -7,6 +7,7 @@ Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "VB.NET Speed Tests", "VB.NE
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{897747C0-B148-416B-A20D-11EDFB016B1F}"
 	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
 		LICENSE = LICENSE
 		README.md = README.md
 	EndProjectSection
