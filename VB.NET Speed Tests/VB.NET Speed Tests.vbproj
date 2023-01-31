@@ -2,13 +2,14 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>
     <RootNamespace>VBNetSpeedTests</RootNamespace>
     <StartupObject>Sub Main</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
     <Authors>Jan G. (Rsge)</Authors>
     <Version>1.0.0</Version>
+	<FileVersion>1.0.0.1</FileVersion>
     <Company>Hanns G. Werner GmbH + Co. KG</Company>
     <Copyright>Copyright © Jan G. 2022</Copyright>
     <RepositoryType>git</RepositoryType>
@@ -20,6 +21,7 @@
     <PackageLicenseFile></PackageLicenseFile>
     <PackageLicenseExpression>GPL-3.0</PackageLicenseExpression>
     <Platforms>AnyCPU;x64;x86;ARM64;ARM32</Platforms>
+    <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
   </PropertyGroup>
 
   <ItemGroup>

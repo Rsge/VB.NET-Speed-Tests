@@ -1,5 +1,8 @@
 ﻿Imports System.Text
 
+''' <summary>
+''' Provides selection for the test to run and to run it.
+''' </summary>
 Public Class MainForm
     ''' <summary>
     ''' Unit of runtime.

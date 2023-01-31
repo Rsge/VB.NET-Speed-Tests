@@ -1,4 +1,7 @@
-﻿Public Class StringEmptyTest
+﻿''' <summary>
+''' Tests different ways of determining if a string is empty.
+''' </summary>
+Public Class IsStringEmptyTest
     Implements ITest
 
     ' String constants

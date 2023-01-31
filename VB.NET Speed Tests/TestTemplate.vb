@@ -1,4 +1,7 @@
-﻿'Public Class ExampleTest
+﻿'''' <summary>
+'''' Tests different ways of 
+'''' </summary>
+'Public Class ExampleTest
 '    Implements ITest
 
 '    ' String constants.

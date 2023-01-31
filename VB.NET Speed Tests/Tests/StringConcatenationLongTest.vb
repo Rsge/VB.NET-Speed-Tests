@@ -1,5 +1,8 @@
 ﻿Imports System.Text
 
+''' <summary>
+''' Tests different ways of concatenating a large number of strings.
+''' </summary>
 Public Class StringConcatenationLongTest
     Implements ITest
 

@@ -1,5 +1,8 @@
 ﻿Imports System.Text
 
+''' <summary>
+''' Tests different ways of concatenating a small number of strings.
+''' </summary>
 Public Class StringConcatenationShortTest
     Implements ITest
 

@@ -1,4 +1,7 @@
-﻿Public Class AssignEmptyStringTest
+﻿''' <summary>
+''' Tests different ways of assigning an empty string to a variable.
+''' </summary>
+Public Class AssignEmptyStringTest
     Implements ITest
 
     ' String constants

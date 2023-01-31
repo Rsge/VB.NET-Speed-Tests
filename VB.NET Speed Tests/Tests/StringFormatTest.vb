@@ -1,4 +1,7 @@
-﻿Public Class StringFormatTest
+﻿''' <summary>
+''' Tests different ways of formatting a string, i.e. inserting strings into defined positions of another string.
+''' </summary>
+Public Class StringFormatTest
     Implements ITest
 
     ' String constants
@@ -12,7 +15,7 @@
     ''' <summary>
     ''' String to test the methods with.
     ''' </summary>
-    Private Shared ReadOnly _insertString = "Meow"
+    Private Shared ReadOnly _insertString As String = "Meow"
 
 
     ''' <summary>

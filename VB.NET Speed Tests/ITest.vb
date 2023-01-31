@@ -1,4 +1,7 @@
-﻿Public Interface ITest
+﻿''' <summary>
+''' Defines a base process for all tests to use.
+''' </summary>
+Public Interface ITest
     ''' <summary>
     ''' Runs tests with different methods of approaching a problem, measuring the time they take.
     ''' </summary>

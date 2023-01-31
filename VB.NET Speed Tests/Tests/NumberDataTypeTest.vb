@@ -1,4 +1,7 @@
-﻿Public Class NumberDataTypeTest
+﻿''' <summary>
+''' Tests different types of whole numbers in calculations.
+''' </summary>
+Public Class NumberDataTypeTest
     Implements ITest
 
     ' String constants
