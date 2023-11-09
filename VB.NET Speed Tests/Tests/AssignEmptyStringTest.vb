@@ -25,7 +25,6 @@ Public Class AssignEmptyStringTest
         Dim testString As String
         Dim startTimes As New List(Of Date)
         Dim endTimes As New List(Of Date)
-        Dim results As New Dictionary(Of String, Double)
 
 
         ' Test '""'.
@@ -49,11 +48,14 @@ Public Class AssignEmptyStringTest
         Next
         endTimes.Add(Date.Now)
 
+
         ' Get results.
+        Dim j As Integer
         Dim diff As TimeSpan
-        For i = 0 To _methodLabels.Length - 1
-            diff = endTimes(i) - startTimes(i)
-            results.Add(_methodLabels(i), diff.TotalSeconds)
+        Dim results As New Dictionary(Of String, Double)
+        For j = 0 To _methodLabels.Length - 1
+            diff = endTimes(j) - startTimes(j)
+            results.Add(_methodLabels(j), diff.TotalSeconds)
         Next
         Return results
     End Function

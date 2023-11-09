@@ -32,16 +32,16 @@ Public Class StringConcatenationLongTest
     Public Function Test(iterations As Long) As Dictionary(Of String, Double) Implements ITest.Test
         ' Basic variables
         Dim i As Long
-        Dim j As Integer
+        Dim k As Integer
         Dim testResultString As String = String.Empty
         Dim startTimes As New List(Of Date)
         Dim endTimes As New List(Of Date)
-        Dim results As New Dictionary(Of String, Double)
+
 
         ' Test 'x &= x.'.
         startTimes.Add(Date.Now)
         For i = 1 To iterations
-            For j = 1 To _repeats
+            For k = 1 To _repeats
                 testResultString &= _testString
             Next
             testResultString = String.Empty
@@ -52,7 +52,7 @@ Public Class StringConcatenationLongTest
         startTimes.Add(Date.Now)
         For i = 1 To iterations
             Dim testBuilder As New StringBuilder
-            For j = 1 To _repeats
+            For k = 1 To _repeats
                 testBuilder.Append(_testString)
             Next
             testResultString = testBuilder.ToString
@@ -61,10 +61,12 @@ Public Class StringConcatenationLongTest
 
 
         ' Get results.
+        Dim j As Integer
         Dim diff As TimeSpan
-        For i = 0 To _methodLabels.Length - 1
-            diff = endTimes(i) - startTimes(i)
-            results.Add(_methodLabels(i), diff.TotalSeconds)
+        Dim results As New Dictionary(Of String, Double)
+        For j = 0 To _methodLabels.Length - 1
+            diff = endTimes(j) - startTimes(j)
+            results.Add(_methodLabels(j), diff.TotalSeconds)
         Next
         Return results
     End Function

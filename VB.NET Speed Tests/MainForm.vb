@@ -15,7 +15,7 @@ Public Class MainForm
     ''' <summary>
     ''' Label for fastest method message.
     ''' </summary>
-    Private Shared ReadOnly _fastestLabel = "Fastest: "
+    Private Shared ReadOnly _fastestLabel As String = "Fastest: "
 
     ''' <summary>
     ''' On loading main form, populates dropdown w/ available tests.
@@ -41,16 +41,16 @@ Public Class MainForm
     ''' <param name="e">Triggering event.</param>
     Private Sub StartButton_Click(sender As Object, e As EventArgs) Handles StartButton.Click
         ' Get selected iteration count and test type.
-        Dim iterations As Long = Math.Pow(10, IterationPotencyCount.Value)
+        Dim iterations As Long = CLng(Math.Pow(10, IterationPotencyCount.Value))
         Dim selectedType As Type = Type.GetType(String.Join(".", [GetType].Namespace, TestsList.SelectedItem))
-        Dim selectedTest As ITest = Activator.CreateInstance(selectedType)
+        Dim selectedTest As ITest = CType(Activator.CreateInstance(selectedType), ITest)
         ' Calculate results.
         Dim results As Dictionary(Of String, Double) = selectedTest.Test(iterations)
         Dim min As Double = results.Values.Min()
         Dim minKey As String = String.Empty
         ' Create output message.
         Dim resultOutputBuilder As New StringBuilder
-        resultOutputBuilder.AppendLine(TestsList.SelectedItem).AppendLine()
+        resultOutputBuilder.AppendLine(TestsList.SelectedItem.ToString()).AppendLine()
         For Each key As String In results.Keys
             resultOutputBuilder.Append(key).Append(":"c).Append(ControlChars.Tab).Append(Math.Round(results(key), _decimals)).AppendLine(_unit)
             If results(key).Equals(min) Then
