@@ -8,11 +8,11 @@
 '    ''' <summary>
 '    ''' Labels of tested action's methods in order of running them in code.
 '    ''' </summary>
-'    Private Shared ReadOnly _methodLabels As String() = {
-'        "Using ''",
-'        "Using ''",
-'        "Using ''",
-'        "Using ''"
+'    Private Shared ReadOnly _methods As String() = {
+'        "''",
+'        "''",
+'        "''",
+'        "''"
 '    }
 '    ''' <summary>
 '    ''' String to test the methods with.
@@ -64,9 +64,9 @@
 
 '        ' Get results.
 '        Dim diff As TimeSpan
-'        For i = 0 To _methodLabels.Length - 1
+'        For i = 0 To _methods.Length - 1
 '            diff = endTimes(i) - startTimes(i)
-'            results.Add(_methodLabels(i), diff.TotalSeconds)
+'            results.Add(My.Resources.MethodLabel & _methods(i), diff.TotalSeconds)
 '        Next
 '        Return results
 '    End Function

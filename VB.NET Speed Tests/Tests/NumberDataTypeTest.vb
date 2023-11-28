@@ -8,11 +8,11 @@ Public Class NumberDataTypeTest
     ''' <summary>
     ''' Labels of tested action's methods in order of running them in code.
     ''' </summary>
-    Private Shared ReadOnly _methodLabels As String() = {
-        "Using a Byte",
-        "Using a Short",
-        "Using an Integer",
-        "Using a Long"
+    Private Shared ReadOnly _methods As String() = {
+        My.Resources.UndefinedArticle & " Byte",
+        My.Resources.UndefinedArticle & " Short",
+        My.Resources.UndefinedArticle & My.Resources.UndefinedArticleSuffix & " Integer",
+        My.Resources.UndefinedArticle & " Long"
     }
 
 
@@ -69,9 +69,9 @@ Public Class NumberDataTypeTest
         Dim j As Integer
         Dim diff As TimeSpan
         Dim results As New Dictionary(Of String, Double)
-        For j = 0 To _methodLabels.Length - 1
+        For j = 0 To _methods.Length - 1
             diff = endTimes(j) - startTimes(j)
-            results.Add(_methodLabels(j), diff.TotalSeconds)
+            results.Add(My.Resources.MethodLabel & Space(1) & _methods(j), diff.TotalSeconds)
         Next
         Return results
     End Function

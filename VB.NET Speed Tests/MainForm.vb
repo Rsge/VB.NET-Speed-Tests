@@ -5,17 +5,9 @@
 ''' </summary>
 Public Class MainForm
     ''' <summary>
-    ''' Unit of runtime.
-    ''' </summary>
-    Private Const _unit As String = " s"
-    ''' <summary>
     ''' Decimals to round the taken time to.
     ''' </summary>
     Private Const _decimals As Integer = 4
-    ''' <summary>
-    ''' Label for fastest method message.
-    ''' </summary>
-    Private Shared ReadOnly _fastestLabel As String = "Fastest: "
 
     ''' <summary>
     ''' On loading main form, populates dropdown w/ available tests.
@@ -52,13 +44,14 @@ Public Class MainForm
         Dim resultOutputBuilder As New StringBuilder
         resultOutputBuilder.AppendLine(TestsList.SelectedItem.ToString()).AppendLine()
         For Each key As String In results.Keys
-            resultOutputBuilder.Append(key).Append(":"c).Append(ControlChars.Tab).Append(Math.Round(results(key), _decimals)).AppendLine(_unit)
+            resultOutputBuilder.Append(key).Append(":"c).Append(ControlChars.Tab).Append(Math.Round(results(key), _decimals)).
+                AppendLine(My.Resources.TimeUnit)
             If results(key).Equals(min) Then
                 minKey = key
             End If
         Next
-        resultOutputBuilder.AppendLine()
-        resultOutputBuilder.Append(_fastestLabel).Append(minKey)
+        resultOutputBuilder.AppendLine().
+            Append(My.Resources.FastestMethodLabel & Space(1)).Append(minKey)
         MessageBox.Show(resultOutputBuilder.ToString)
     End Sub
 End Class

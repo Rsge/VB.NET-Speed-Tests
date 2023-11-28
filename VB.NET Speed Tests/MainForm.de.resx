@@ -117,43 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;StartButton.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;IterationsPowerLabel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="StartButton.Text" xml:space="preserve">
+    <value>Test beginnen</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="IterationsPowerLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 15</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="TestsLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="TestsList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 31</value>
-  </data>
-  <data name="TestsLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 13</value>
-  </data>
-  <data name="IterationsPowerLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;TestsList.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;IterationPotencyCount.Name" xml:space="preserve">
-    <value>IterationPotencyCount</value>
-  </data>
-  <data name="&gt;&gt;TestsList.Name" xml:space="preserve">
-    <value>TestsList</value>
-  </data>
   <data name="IterationsLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 15</value>
+    <value>65, 15</value>
   </data>
-  <data name="&gt;&gt;IterationsLabel.Name" xml:space="preserve">
-    <value>IterationsLabel</value>
+  <data name="IterationsLabel.Text" xml:space="preserve">
+    <value>Durchläufe</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -231,149 +203,7 @@
         AB/j4Awf9/g+P//4H3//8A////AP///wD/8=
 </value>
   </data>
-  <data name="IterationPotencyCount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 75</value>
-  </data>
-  <data name="TestsLabel.Text" xml:space="preserve">
-    <value>Test</value>
-  </data>
-  <data name="&gt;&gt;IterationPotencyCount.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;IterationsLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="IterationsPowerLabel.Text" xml:space="preserve">
-    <value>10 ^</value>
-  </data>
-  <data name="IterationsLabel.Text" xml:space="preserve">
-    <value>Iterations</value>
-  </data>
-  <data name="&gt;&gt;TestsLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="StartButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 104</value>
-  </data>
-  <data name="IterationsLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="IterationsPowerLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 77</value>
-  </data>
-  <data name="IterationsLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="IterationPotencyCount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 23</value>
-  </data>
-  <data name="&gt;&gt;IterationsPowerLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="IterationPotencyCount.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;IterationsLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="StartButton.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="IterationsLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 57</value>
-  </data>
-  <data name="&gt;&gt;StartButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TestsList.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>136, 180</value>
-  </data>
-  <data name="&gt;&gt;TestsLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="StartButton.Text" xml:space="preserve">
-    <value>Start Test</value>
-  </data>
-  <data name="&gt;&gt;IterationsPowerLabel.Name" xml:space="preserve">
-    <value>IterationsPowerLabel</value>
-  </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Speed Tests</value>
+    <value>Geschwindigkeitstests</value>
   </data>
-  <data name="TestsList.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>188, 159</value>
-  </data>
-  <data name="StartButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;StartButton.Name" xml:space="preserve">
-    <value>StartButton</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
-  </data>
-  <data name="TestsList.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;IterationPotencyCount.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;IterationPotencyCount.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;IterationsLabel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="TestsLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 15</value>
-  </data>
-  <data name="IterationsPowerLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="TestsLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="IterationPotencyCount.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="StartButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>164, 43</value>
-  </data>
-  <data name="&gt;&gt;StartButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;TestsLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;TestsList.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;TestsLabel.Name" xml:space="preserve">
-    <value>TestsLabel</value>
-  </data>
-  <data name="&gt;&gt;IterationsPowerLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="IterationPotencyCount.ThousandsSeparator" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>MainForm</value>
-  </data>
-  <data name="TestsList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>164, 23</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>

@@ -118,22 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="FastestMethodLabel" xml:space="preserve">
-    <value>Fastest:</value>
+    <value>Schnellste:</value>
   </data>
   <data name="MethodLabel" xml:space="preserve">
-    <value>Using</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Stopwatch" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Stopwatch.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TimeUnit" xml:space="preserve">
-    <value> s</value>
+    <value>Verwende</value>
   </data>
   <data name="UndefinedArticle" xml:space="preserve">
-    <value>a</value>
+    <value>einen</value>
   </data>
   <data name="UndefinedArticleSuffix" xml:space="preserve">
-    <value>n</value>
+    <value />
   </data>
 </root>
