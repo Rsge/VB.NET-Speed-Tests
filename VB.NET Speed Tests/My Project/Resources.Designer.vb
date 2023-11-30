@@ -133,6 +133,15 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized string similar to Desc.
+        '''</summary>
+        Friend ReadOnly Property LabelDescResource() As String
+            Get
+                Return ResourceManager.GetString("LabelDescResource", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized string similar to Fastest:.
         '''</summary>
         Friend ReadOnly Property LabelFastestMethod() As String
@@ -147,15 +156,6 @@ Namespace My.Resources
         Friend ReadOnly Property LabelMethod() As String
             Get
                 Return ResourceManager.GetString("LabelMethod", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to Desc.
-        '''</summary>
-        Friend ReadOnly Property LabelResourceDesc() As String
-            Get
-                Return ResourceManager.GetString("LabelResourceDesc", resourceCulture)
             End Get
         End Property
         

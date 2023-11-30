@@ -119,9 +119,11 @@
   </resheader>
   <data name="ArticleSuffixUndefined" xml:space="preserve">
     <value>n</value>
+    <comment>Suffix of undefined article for special cases.</comment>
   </data>
   <data name="ArticleUndefined" xml:space="preserve">
     <value>a</value>
+    <comment>Base undefined article.</comment>
   </data>
   <data name="DescAssignEmptyStringTest" xml:space="preserve">
     <value>Assign empty string</value>
@@ -141,14 +143,17 @@
   <data name="DescStringFormatTest" xml:space="preserve">
     <value>Format string</value>
   </data>
+  <data name="LabelDescResource" xml:space="preserve">
+    <value>Desc</value>
+    <comment>Label of descriptive resources.</comment>
+  </data>
   <data name="LabelFastestMethod" xml:space="preserve">
     <value>Fastest:</value>
+    <comment>Label for fastest method message.</comment>
   </data>
   <data name="LabelMethod" xml:space="preserve">
     <value>Using</value>
-  </data>
-  <data name="LabelResourceDesc" xml:space="preserve">
-    <value>Desc</value>
+    <comment>Label in method list.</comment>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Stopwatch" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -156,5 +161,6 @@
   </data>
   <data name="UnitTime" xml:space="preserve">
     <value> s</value>
+    <comment>Unit of runtime. Needs space in front.</comment>
   </data>
 </root>

@@ -27,7 +27,7 @@ Public Class MainForm
                                               Select aType.Name
         _testDict = tests.ToDictionary(Function(key) key,
                                        Function(key) Convert.ToString( ' Nothing -> ""
-                                       If(My.Resources.ResourceManager.GetObject(My.Resources.LabelResourceDesc & key), key))) ' No resource -> Use key.
+                                       If(My.Resources.ResourceManager.GetObject(My.Resources.LabelDescResource & key), key))) ' No resource -> Use key.
         ' Populate dropdown.
         TestsList.Items.AddRange(_testDict.Values.ToArray())
         TestsList.SelectedIndex = 0
