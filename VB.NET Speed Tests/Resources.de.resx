@@ -123,28 +123,28 @@
   <data name="ArticleUndefined" xml:space="preserve">
     <value>einen</value>
   </data>
+  <data name="DescAssignEmptyStringTest" xml:space="preserve">
+    <value>Leeren String zuweisen</value>
+  </data>
+  <data name="DescIsStringEmptyTest" xml:space="preserve">
+    <value>Ist String leer</value>
+  </data>
+  <data name="DescNumberDataTypeTest" xml:space="preserve">
+    <value>Ganzzahl-Datentyp-Vergleich</value>
+  </data>
+  <data name="DescStringConcatenationLongTest" xml:space="preserve">
+    <value>Zusammensetzen langer Strings</value>
+  </data>
+  <data name="DescStringConcatenationShortTest" xml:space="preserve">
+    <value>Zusammensetzen kurzer Strings</value>
+  </data>
+  <data name="DescStringFormatTest" xml:space="preserve">
+    <value>String formatieren</value>
+  </data>
   <data name="LabelFastestMethod" xml:space="preserve">
     <value>Schnellste:</value>
   </data>
   <data name="LabelMethod" xml:space="preserve">
     <value>Verwende</value>
-  </data>
-  <data name="NameAssignEmptyStringTest" xml:space="preserve">
-    <value>Leeren String zuweisen</value>
-  </data>
-  <data name="NameIsStringEmptyTest" xml:space="preserve">
-    <value>Ist String leer</value>
-  </data>
-  <data name="NameNumberDataTypeTest" xml:space="preserve">
-    <value>Ganzzahl-Datentyp-Vergleich</value>
-  </data>
-  <data name="NameStringConcatenationLongTest" xml:space="preserve">
-    <value>Zusammensetzen langer Strings</value>
-  </data>
-  <data name="NameStringConcatenationShortTest" xml:space="preserve">
-    <value>Zusammensetzen kurzer Strings</value>
-  </data>
-  <data name="NameStringFormatTest" xml:space="preserve">
-    <value>String formatieren</value>
   </data>
 </root>

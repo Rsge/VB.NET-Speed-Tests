@@ -123,32 +123,32 @@
   <data name="ArticleUndefined" xml:space="preserve">
     <value>a</value>
   </data>
+  <data name="DescAssignEmptyStringTest" xml:space="preserve">
+    <value>Assign empty string</value>
+  </data>
+  <data name="DescIsStringEmptyTest" xml:space="preserve">
+    <value>Is string empty</value>
+  </data>
+  <data name="DescNumberDataTypeTest" xml:space="preserve">
+    <value>Whole number data type comparison</value>
+  </data>
+  <data name="DescStringConcatenationLongTest" xml:space="preserve">
+    <value>Long string concatenation</value>
+  </data>
+  <data name="DescStringConcatenationShortTest" xml:space="preserve">
+    <value>Short string concatenation</value>
+  </data>
+  <data name="DescStringFormatTest" xml:space="preserve">
+    <value>Format string</value>
+  </data>
   <data name="LabelFastestMethod" xml:space="preserve">
     <value>Fastest:</value>
   </data>
   <data name="LabelMethod" xml:space="preserve">
     <value>Using</value>
   </data>
-  <data name="LabelNameResource" xml:space="preserve">
-    <value>Name</value>
-  </data>
-  <data name="NameAssignEmptyStringTest" xml:space="preserve">
-    <value>Assign empty string</value>
-  </data>
-  <data name="NameIsStringEmptyTest" xml:space="preserve">
-    <value>Is string empty</value>
-  </data>
-  <data name="NameNumberDataTypeTest" xml:space="preserve">
-    <value>Whole number data type comparison</value>
-  </data>
-  <data name="NameStringConcatenationLongTest" xml:space="preserve">
-    <value>Long string concatenation</value>
-  </data>
-  <data name="NameStringConcatenationShortTest" xml:space="preserve">
-    <value>Short string concatenation</value>
-  </data>
-  <data name="NameStringFormatTest" xml:space="preserve">
-    <value>Format string</value>
+  <data name="LabelResourceDesc" xml:space="preserve">
+    <value>Desc</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Stopwatch" type="System.Resources.ResXFileRef, System.Windows.Forms">

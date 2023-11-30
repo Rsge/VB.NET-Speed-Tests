@@ -79,6 +79,60 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized string similar to Assign empty string.
+        '''</summary>
+        Friend ReadOnly Property DescAssignEmptyStringTest() As String
+            Get
+                Return ResourceManager.GetString("DescAssignEmptyStringTest", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Is string empty.
+        '''</summary>
+        Friend ReadOnly Property DescIsStringEmptyTest() As String
+            Get
+                Return ResourceManager.GetString("DescIsStringEmptyTest", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Whole number data type comparison.
+        '''</summary>
+        Friend ReadOnly Property DescNumberDataTypeTest() As String
+            Get
+                Return ResourceManager.GetString("DescNumberDataTypeTest", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Long string concatenation.
+        '''</summary>
+        Friend ReadOnly Property DescStringConcatenationLongTest() As String
+            Get
+                Return ResourceManager.GetString("DescStringConcatenationLongTest", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Short string concatenation.
+        '''</summary>
+        Friend ReadOnly Property DescStringConcatenationShortTest() As String
+            Get
+                Return ResourceManager.GetString("DescStringConcatenationShortTest", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Format string.
+        '''</summary>
+        Friend ReadOnly Property DescStringFormatTest() As String
+            Get
+                Return ResourceManager.GetString("DescStringFormatTest", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized string similar to Fastest:.
         '''</summary>
         Friend ReadOnly Property LabelFastestMethod() As String
@@ -97,65 +151,11 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Name.
+        '''  Looks up a localized string similar to Desc.
         '''</summary>
-        Friend ReadOnly Property LabelNameResource() As String
+        Friend ReadOnly Property LabelResourceDesc() As String
             Get
-                Return ResourceManager.GetString("LabelNameResource", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to Assign empty string.
-        '''</summary>
-        Friend ReadOnly Property NameAssignEmptyStringTest() As String
-            Get
-                Return ResourceManager.GetString("NameAssignEmptyStringTest", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to Is string empty.
-        '''</summary>
-        Friend ReadOnly Property NameIsStringEmptyTest() As String
-            Get
-                Return ResourceManager.GetString("NameIsStringEmptyTest", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to Whole number data type comparison.
-        '''</summary>
-        Friend ReadOnly Property NameNumberDataTypeTest() As String
-            Get
-                Return ResourceManager.GetString("NameNumberDataTypeTest", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to Long string concatenation.
-        '''</summary>
-        Friend ReadOnly Property NameStringConcatenationLongTest() As String
-            Get
-                Return ResourceManager.GetString("NameStringConcatenationLongTest", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to Short string concatenation.
-        '''</summary>
-        Friend ReadOnly Property NameStringConcatenationShortTest() As String
-            Get
-                Return ResourceManager.GetString("NameStringConcatenationShortTest", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to Format string.
-        '''</summary>
-        Friend ReadOnly Property NameStringFormatTest() As String
-            Get
-                Return ResourceManager.GetString("NameStringFormatTest", resourceCulture)
+                Return ResourceManager.GetString("LabelResourceDesc", resourceCulture)
             End Get
         End Property
         
