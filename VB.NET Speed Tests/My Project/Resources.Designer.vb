@@ -61,20 +61,101 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized string similar to n.
+        '''</summary>
+        Friend ReadOnly Property ArticleSuffixUndefined() As String
+            Get
+                Return ResourceManager.GetString("ArticleSuffixUndefined", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to a.
+        '''</summary>
+        Friend ReadOnly Property ArticleUndefined() As String
+            Get
+                Return ResourceManager.GetString("ArticleUndefined", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized string similar to Fastest:.
         '''</summary>
-        Friend ReadOnly Property FastestMethodLabel() As String
+        Friend ReadOnly Property LabelFastestMethod() As String
             Get
-                Return ResourceManager.GetString("FastestMethodLabel", resourceCulture)
+                Return ResourceManager.GetString("LabelFastestMethod", resourceCulture)
             End Get
         End Property
         
         '''<summary>
         '''  Looks up a localized string similar to Using.
         '''</summary>
-        Friend ReadOnly Property MethodLabel() As String
+        Friend ReadOnly Property LabelMethod() As String
             Get
-                Return ResourceManager.GetString("MethodLabel", resourceCulture)
+                Return ResourceManager.GetString("LabelMethod", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Name.
+        '''</summary>
+        Friend ReadOnly Property LabelNameResource() As String
+            Get
+                Return ResourceManager.GetString("LabelNameResource", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Assign empty string.
+        '''</summary>
+        Friend ReadOnly Property NameAssignEmptyStringTest() As String
+            Get
+                Return ResourceManager.GetString("NameAssignEmptyStringTest", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Is string empty.
+        '''</summary>
+        Friend ReadOnly Property NameIsStringEmptyTest() As String
+            Get
+                Return ResourceManager.GetString("NameIsStringEmptyTest", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Whole number data type comparison.
+        '''</summary>
+        Friend ReadOnly Property NameNumberDataTypeTest() As String
+            Get
+                Return ResourceManager.GetString("NameNumberDataTypeTest", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Long string concatenation.
+        '''</summary>
+        Friend ReadOnly Property NameStringConcatenationLongTest() As String
+            Get
+                Return ResourceManager.GetString("NameStringConcatenationLongTest", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Short string concatenation.
+        '''</summary>
+        Friend ReadOnly Property NameStringConcatenationShortTest() As String
+            Get
+                Return ResourceManager.GetString("NameStringConcatenationShortTest", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Format string.
+        '''</summary>
+        Friend ReadOnly Property NameStringFormatTest() As String
+            Get
+                Return ResourceManager.GetString("NameStringFormatTest", resourceCulture)
             End Get
         End Property
         
@@ -91,27 +172,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized string similar to  s.
         '''</summary>
-        Friend ReadOnly Property TimeUnit() As String
+        Friend ReadOnly Property UnitTime() As String
             Get
-                Return ResourceManager.GetString("TimeUnit", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to a.
-        '''</summary>
-        Friend ReadOnly Property UndefinedArticle() As String
-            Get
-                Return ResourceManager.GetString("UndefinedArticle", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to n.
-        '''</summary>
-        Friend ReadOnly Property UndefinedArticleSuffix() As String
-            Get
-                Return ResourceManager.GetString("UndefinedArticleSuffix", resourceCulture)
+                Return ResourceManager.GetString("UnitTime", resourceCulture)
             End Get
         End Property
     End Module

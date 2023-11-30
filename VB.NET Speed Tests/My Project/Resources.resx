@@ -117,23 +117,44 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="FastestMethodLabel" xml:space="preserve">
+  <data name="ArticleSuffixUndefined" xml:space="preserve">
+    <value>n</value>
+  </data>
+  <data name="ArticleUndefined" xml:space="preserve">
+    <value>a</value>
+  </data>
+  <data name="LabelFastestMethod" xml:space="preserve">
     <value>Fastest:</value>
   </data>
-  <data name="MethodLabel" xml:space="preserve">
+  <data name="LabelMethod" xml:space="preserve">
     <value>Using</value>
+  </data>
+  <data name="LabelNameResource" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NameAssignEmptyStringTest" xml:space="preserve">
+    <value>Assign empty string</value>
+  </data>
+  <data name="NameIsStringEmptyTest" xml:space="preserve">
+    <value>Is string empty</value>
+  </data>
+  <data name="NameNumberDataTypeTest" xml:space="preserve">
+    <value>Whole number data type comparison</value>
+  </data>
+  <data name="NameStringConcatenationLongTest" xml:space="preserve">
+    <value>Long string concatenation</value>
+  </data>
+  <data name="NameStringConcatenationShortTest" xml:space="preserve">
+    <value>Short string concatenation</value>
+  </data>
+  <data name="NameStringFormatTest" xml:space="preserve">
+    <value>Format string</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Stopwatch" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Stopwatch.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TimeUnit" xml:space="preserve">
+  <data name="UnitTime" xml:space="preserve">
     <value> s</value>
-  </data>
-  <data name="UndefinedArticle" xml:space="preserve">
-    <value>a</value>
-  </data>
-  <data name="UndefinedArticleSuffix" xml:space="preserve">
-    <value>n</value>
   </data>
 </root>

@@ -14,7 +14,7 @@ Public Class StringConcatenationShortTest
         "'x & x & ...'",
         "'$""""'",
         "String.Join",
-        My.Resources.UndefinedArticle & " StringBuilder"
+        My.Resources.ArticleUndefined & " StringBuilder"
     }
     ''' <summary>
     ''' String to test the methods with.
@@ -72,7 +72,7 @@ Public Class StringConcatenationShortTest
         Dim results As New Dictionary(Of String, Double)
         For j = 0 To _methods.Length - 1
             diff = endTimes(j) - startTimes(j)
-            results.Add(My.Resources.MethodLabel & Space(1) & _methods(j), diff.TotalSeconds)
+            results.Add(My.Resources.LabelMethod & Space(1) & _methods(j), diff.TotalSeconds)
         Next
         Return results
     End Function
