@@ -132,7 +132,10 @@
     <value>Is string empty</value>
   </data>
   <data name="DescNumberDataTypeTest" xml:space="preserve">
-    <value>Whole number data type comparison</value>
+    <value>Whole number data types</value>
+  </data>
+  <data name="DescSpaceVariantTest" xml:space="preserve">
+    <value>String creation methods</value>
   </data>
   <data name="DescStringConcatenationLongTest" xml:space="preserve">
     <value>Long string concatenation</value>

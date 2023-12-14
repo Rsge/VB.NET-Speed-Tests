@@ -59,7 +59,7 @@ Public Class MainForm
             End If
         Next
         resultOutputBuilder.AppendLine().
-            Append(My.Resources.LabelFastestMethod & Space(1)).Append(minKey)
+            Append(My.Resources.LabelFastestMethod & " ").Append(minKey)
         MessageBox.Show(resultOutputBuilder.ToString)
     End Sub
 End Class

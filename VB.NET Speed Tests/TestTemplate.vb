@@ -17,7 +17,7 @@
 '    ''' <summary>
 '    ''' String to test the methods with.
 '    ''' </summary>
-'    Private Shared ReadOnly testString As String = "TestExampleTestExampleTest"
+'    Private Shared ReadOnly _testString As String = "TestExampleTestExampleTest"
 
 
 '    ''' <summary>
@@ -63,10 +63,11 @@
 
 
 '        ' Get results.
+'        Dim j As Integer
 '        Dim diff As TimeSpan
-'        For i = 0 To _methods.Length - 1
-'            diff = endTimes(i) - startTimes(i)
-'            results.Add(My.Resources.MethodLabel & _methods(i), diff.TotalSeconds)
+'        For j = 0 To _methods.Length - 1
+'            diff = endTimes(j) - startTimes(j)
+'            results.Add(My.Resources.LabelMethod & " " & _methods(j), diff.TotalSeconds)
 '        Next
 '        Return results
 '    End Function

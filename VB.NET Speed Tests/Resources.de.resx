@@ -130,7 +130,10 @@
     <value>Ist String leer</value>
   </data>
   <data name="DescNumberDataTypeTest" xml:space="preserve">
-    <value>Ganzzahl-Datentyp-Vergleich</value>
+    <value>Ganzzahl-Datentypen</value>
+  </data>
+  <data name="DescSpaceVariantTest" xml:space="preserve">
+    <value>String-Erstellungsmethoden</value>
   </data>
   <data name="DescStringConcatenationLongTest" xml:space="preserve">
     <value>Zusammensetzen langer Strings</value>

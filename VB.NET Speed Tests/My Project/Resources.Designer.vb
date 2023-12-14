@@ -97,11 +97,20 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Whole number data type comparison.
+        '''  Looks up a localized string similar to Whole number data types.
         '''</summary>
         Friend ReadOnly Property DescNumberDataTypeTest() As String
             Get
                 Return ResourceManager.GetString("DescNumberDataTypeTest", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to String creation methods.
+        '''</summary>
+        Friend ReadOnly Property DescSpaceVariantTest() As String
+            Get
+                Return ResourceManager.GetString("DescSpaceVariantTest", resourceCulture)
             End Get
         End Property
         

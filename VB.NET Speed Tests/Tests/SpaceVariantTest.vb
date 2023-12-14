@@ -1,18 +1,25 @@
 ﻿''' <summary>
-''' Tests different ways of assigning an empty string to a variable.
+''' Tests different ways of creating a string with a space.
 ''' </summary>
-Public Class AssignEmptyStringTest
+Public Class SpaceVariantTest
     Implements ITest
 
-    ' String constants
+    ' String constants.
     ''' <summary>
     ''' Labels of tested action's methods in order of running them in code.
     ''' </summary>
     Private Shared ReadOnly _methods As String() = {
-        "'""""'",
-        "'vbNullString'",
-        "'String.Empty'"
+        "'"" ""'",
+        "'"" ""c'",
+        "Space(1)",
+        My.Resources.ArticleUndefined & " Const"
     }
+    ''' <summary>
+    ''' String to test the methods with.
+    ''' </summary>
+    Private Shared ReadOnly _testStringBase As String = "Test"
+    Private Const _space As String = " "
+
 
     ''' <summary>
     ''' Runs tests with different methods of approaching a problem, measuring the time they take.
@@ -25,26 +32,33 @@ Public Class AssignEmptyStringTest
         Dim testString As String
         Dim startTimes As New List(Of Date)
         Dim endTimes As New List(Of Date)
+        Dim results As New Dictionary(Of String, Double)
 
-
-        ' Test '""'.
+        ' Test '" "'.
         startTimes.Add(Date.Now)
         For i = 1 To iterations
-            testString = ""
+            testString = _testStringBase & " "
         Next
         endTimes.Add(Date.Now)
 
-        ' Test 'vbNullString'.
+        ' Test '" "c'.
         startTimes.Add(Date.Now)
         For i = 1 To iterations
-            testString = vbNullString
+            testString = _testStringBase & " "c
         Next
         endTimes.Add(Date.Now)
 
-        ' Test 'String.Empty'.
+        ' Test Space(1).
         startTimes.Add(Date.Now)
         For i = 1 To iterations
-            testString = String.Empty
+            testString = _testStringBase & Space(1)
+        Next
+        endTimes.Add(Date.Now)
+
+        ' Test a Const.
+        startTimes.Add(Date.Now)
+        For i = 1 To iterations
+            testString = _testStringBase & _space
         Next
         endTimes.Add(Date.Now)
 
@@ -52,7 +66,6 @@ Public Class AssignEmptyStringTest
         ' Get results.
         Dim j As Integer
         Dim diff As TimeSpan
-        Dim results As New Dictionary(Of String, Double)
         For j = 0 To _methods.Length - 1
             diff = endTimes(j) - startTimes(j)
             results.Add(My.Resources.LabelMethod & " " & _methods(j), diff.TotalSeconds)

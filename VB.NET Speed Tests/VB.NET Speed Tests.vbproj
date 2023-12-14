@@ -11,8 +11,8 @@
     <MyType>WindowsForms</MyType>
     <Title>VB.NET Speed Tests</Title>
 	<Description>Processing speed comparisons for various different methods of often-used routines.</Description>
-	<Version>1.2.0</Version>
-	<FileVersion>1.2.0.2</FileVersion>
+	<Version>1.3.0</Version>
+	<FileVersion>1.3.0.0</FileVersion>
 	<AssemblyVersion>1.0.0.0</AssemblyVersion>
 	<Authors>Jan G. (Rsge)</Authors>
     <Copyright>Copyright © Jan G. 2022</Copyright>
